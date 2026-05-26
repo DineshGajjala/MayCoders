@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+        
+        }
+        th,td{
+            padding:10px 20px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Syntax:
+    <table>
+        <tr>
+            <th>heading1</th>
+            <th>heading2</th>
+        </tr>
+    </table>
+-->
+    <table bgcolor="lightblue">
+        <tr>
+            <th bgcolor="lightgray">Name</th>
+            <th bgcolor="lightgray">Age</th>
+            <th bgcolor="lightgray">City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td rowspan="2">25</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+    <ol style="list-style: upper-alpha;" start="1" >
+    <li>table:it is used to display data in tabular form</li>
+    <li>tr:it is used to define a row in a table</li>
+    <li>th:it is used to define a header cell in a table</li>
+    </ol>
+    <ul style="list-style: square;">
+        <li>td:it is used to define a standard cell in a table</li>
+        <li>border:it is used to set the border of the table</li>
+        <li>cellpadding:it is used to set the padding inside the cells</li>
+    </ul>
+    <dl>
+        <dt>colspan:it is used to specify the number of columns a cell should span</dt>
+        <dd>it is used in td or th element</dd>
+        <dt>rowspan:it is used to specify the number of rows a cell should span</dt>
+        <dd>it is used in td or th element</dd>
+    </dl>
+</body>
+</html>
